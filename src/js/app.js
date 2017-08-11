@@ -21,7 +21,7 @@ App = {
   },
 
   initContract: function() {
-    $.getJSON('../build/contract/CareToken.json', function(data) {
+    $.getJSON('CareToken.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with truffle-contract.
       var CareTokenArtifact = data;
       App.contracts.CareToken = TruffleContract(CareTokenArtifact);
