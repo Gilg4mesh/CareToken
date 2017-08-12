@@ -12,13 +12,12 @@ module.exports = {
     kovan: {
       network_id: 42,
       provider: new HDWalletProvider(mnemonic, 'https://kovan.infura.io'),
-      gas: 450000, // Note: lower gas limit when failing on contract deployment.
-      from:'0xB9A9055c1e696b13C762a3F4358378f2bC35208e'
+      gas: 4.5e6
     },
     rinkeby: {
       network_id: 4,
       provider: new HDWalletProvider(mnemonic, 'https://rinkeby.infura.io/'),
-      gas: 450000
+      gas: 4.5e6
     }
   }
 }
